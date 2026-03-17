@@ -1,0 +1,87 @@
+@use "../../styles/tokens" as *;
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.float {
+  transform-origin: center;
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.draw {
+  stroke-dasharray: 520;
+  stroke-dashoffset: 520;
+  animation: draw 2.4s $ease 0.2s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.bars rect {
+  transform-origin: bottom;
+  animation: grow 0.9s $ease both;
+}
+
+.bars rect:nth-child(1) {
+  animation-delay: 0.25s;
+}
+.bars rect:nth-child(2) {
+  animation-delay: 0.33s;
+}
+.bars rect:nth-child(3) {
+  animation-delay: 0.41s;
+}
+.bars rect:nth-child(4) {
+  animation-delay: 0.49s;
+}
+
+@keyframes grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.ping,
+.ping2 {
+  transform-origin: center;
+  animation: ping 2.2s ease-out infinite;
+}
+
+.ping2 {
+  animation-delay: 0.4s;
+}
+
+@keyframes ping {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+

@@ -1,0 +1,67 @@
+@use "../../styles/tokens" as *;
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  padding: 28px 0;
+  background: rgba($bg0, 0.35);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr auto;
+  gap: 18px;
+  align-items: center;
+
+  @media (max-width: $bpMd) {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub {
+  color: $muted;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  justify-content: center;
+
+  @media (max-width: $bpMd) {
+    justify-content: flex-start;
+  }
+
+  a {
+    color: $muted;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 0;
+    border-bottom: 1px solid transparent;
+    transition: color 0.14s $ease, border-color 0.14s $ease;
+
+    &:hover {
+      color: $text;
+      border-color: rgba($orange, 0.35);
+    }
+  }
+}
+
+.copy {
+  color: $subtle;
+  font-size: 12.5px;
+  text-align: right;
+
+  @media (max-width: $bpMd) {
+    text-align: left;
+  }
+}
+

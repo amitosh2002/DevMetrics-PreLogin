@@ -1,0 +1,32 @@
+$bg0: #0b0c10;
+$bg1: #0f1117;
+$surface: rgba(255, 255, 255, 0.045);
+$surface2: rgba(255, 255, 255, 0.07);
+$border: rgba(255, 255, 255, 0.10);
+$border2: rgba(255, 255, 255, 0.16);
+
+$text: rgba(255, 255, 255, 0.92);
+$muted: rgba(255, 255, 255, 0.66);
+$subtle: rgba(255, 255, 255, 0.50);
+
+$orange: #e8622a;
+$purple: #7c3aed;
+$purpleMid: #a78bfa;
+$green: #22c55e;
+$yellow: #f59e0b;
+
+$gradBrand: linear-gradient(120deg, rgba($orange, 0.95) 0%, rgba($purpleMid, 0.85) 45%, rgba($purple, 0.75) 100%);
+$gradBrandSoft: linear-gradient(120deg, rgba($orange, 0.18) 0%, rgba($purpleMid, 0.12) 50%, rgba($purple, 0.10) 100%);
+
+$shadowSm: 0 8px 30px rgba(0, 0, 0, 0.28);
+$shadowMd: 0 16px 60px rgba(0, 0, 0, 0.40);
+
+$ffHead: "Syne", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+$ffBody: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+$ffMono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$ease: cubic-bezier(0.25, 1, 0.5, 1);
+
+$bpSm: 520px;
+$bpMd: 820px;
+$bpLg: 1100px;

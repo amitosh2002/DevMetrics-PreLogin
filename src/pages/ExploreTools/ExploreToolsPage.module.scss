@@ -1,0 +1,140 @@
+@use "../../styles/tokens" as *;
+
+.wrap {
+  padding: 10px 0 22px;
+}
+
+.head {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 18px 18px;
+  box-shadow: $shadowSm;
+}
+
+.title {
+  margin: 0;
+  font-family: $ffHead;
+  font-size: clamp(28px, 3.2vw, 40px);
+  letter-spacing: -0.04em;
+}
+
+.sub {
+  margin: 10px 0 0;
+  color: $muted;
+  line-height: 1.7;
+  max-width: 80ch;
+}
+
+.grid {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+
+  @media (max-width: $bpLg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toolCard,
+.toolCardDim {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: $shadowSm;
+  padding: 16px 16px;
+}
+
+.toolCardDim {
+  opacity: 0.75;
+}
+
+.toolTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toolIcon,
+.toolIconDim {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $ffHead;
+  font-weight: 800;
+  color: #0b0c10;
+  background: $gradBrand;
+  box-shadow: 0 16px 48px rgba($orange, 0.16);
+  flex-shrink: 0;
+}
+
+.toolIconDim {
+  background: rgba(255, 255, 255, 0.06);
+  color: $text;
+  box-shadow: none;
+}
+
+.toolMeta {
+  min-width: 0;
+}
+
+.toolName {
+  font-family: $ffHead;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.toolTag {
+  margin-top: 2px;
+  color: $muted;
+  font-size: 13px;
+}
+
+.soon {
+  margin-left: auto;
+  font-family: $ffMono;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.20);
+  color: $muted;
+}
+
+.toolDesc {
+  margin: 12px 0 0;
+  color: $muted;
+  line-height: 1.7;
+}
+
+.toolFooter {
+  margin-top: 14px;
+}
+
+.ghostBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: $text;
+  font-size: 13px;
+  font-weight: 650;
+  transition: transform 0.15s $ease, background 0.15s $ease, border-color 0.15s $ease;
+
+  &:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+}
+
