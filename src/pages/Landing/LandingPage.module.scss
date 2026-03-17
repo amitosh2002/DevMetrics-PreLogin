@@ -87,7 +87,7 @@
 .primaryBtn {
   @extend .btnBase;
   background: $gradBrand;
-  color: #0b0c10;
+  color: #ffffff;
   box-shadow: 0 16px 52px rgba($orange, 0.16);
 
   &:hover {
@@ -98,14 +98,14 @@
 
 .secondaryBtn {
   @extend .btnBase;
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: $surface;
+  border-color: $border;
   color: $text;
 
   &:hover {
     transform: translateY(-1px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.18);
+    background: $surface2;
+    border-color: $border2;
   }
 }
 
@@ -121,8 +121,8 @@
 }
 
 .metaCard {
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.72);
   border-radius: 16px;
   padding: 12px 12px;
 }
@@ -143,11 +143,11 @@
 
 .heroRight {
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid $border;
   background:
     radial-gradient(700px 420px at 30% 10%, rgba($orange, 0.20) 0%, transparent 55%),
     radial-gradient(620px 380px at 80% 15%, rgba($purpleMid, 0.14) 0%, transparent 55%),
-    rgba(255, 255, 255, 0.03);
+    rgba($bg1, 0.72);
   box-shadow: $shadowSm;
   padding: 18px;
 
@@ -162,9 +162,9 @@
 }
 
 .sectionAlt {
-  background: rgba(255, 255, 255, 0.02);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba($ink, 0.02);
+  border-top: 1px solid rgba($ink, 0.06);
+  border-bottom: 1px solid rgba($ink, 0.06);
 }
 
 .h2 {
@@ -192,11 +192,11 @@
 }
 
 .card {
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.75);
   border-radius: 18px;
   padding: 16px 16px;
-  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.18);
+  box-shadow: $shadowSm;
 }
 
 .cardTitle {
@@ -231,8 +231,8 @@
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.72);
   border-radius: 16px;
   padding: 12px 14px;
 
@@ -257,7 +257,7 @@
 
 .connectCard {
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid $border;
   background: $gradBrandSoft;
   box-shadow: $shadowSm;
   display: grid;
@@ -314,8 +314,8 @@
 .miniPanel {
   width: 100%;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba($ink, 0.10);
+  background: rgba($bg1, 0.78);
   padding: 14px 14px;
 }
 
@@ -375,6 +375,6 @@
 .miniDivider {
   height: 1px;
   margin: 12px 0;
-  background: rgba(255, 255, 255, 0.10);
+  background: rgba($ink, 0.10);
 }
 

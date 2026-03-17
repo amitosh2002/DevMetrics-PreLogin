@@ -5,8 +5,8 @@
   top: 0;
   z-index: 50;
   backdrop-filter: blur(14px);
-  background: rgba($bg0, 0.55);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba($bg1, 0.78);
+  border-bottom: 1px solid $border;
 }
 
 .inner {
@@ -44,13 +44,13 @@
 }
 
 .link:hover {
-  background: rgba(255, 255, 255, 0.04);
+  background: $surface;
   color: $text;
 }
 
 .active {
   color: $text;
-  background: rgba(255, 255, 255, 0.05);
+  background: $surface2;
   border-color: rgba($orange, 0.18);
 }
 
@@ -77,12 +77,12 @@
 
 .ghostBtn {
   @extend .btnBase;
-  background: rgba(255, 255, 255, 0.02);
-  border-color: rgba(255, 255, 255, 0.10);
+  background: $surface;
+  border-color: $border;
   color: $muted;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: $surface2;
     color: $text;
     transform: translateY(-1px);
   }
@@ -91,13 +91,13 @@
 .primaryBtn {
   @extend .btnBase;
   background: $gradBrand;
-  color: #0b0c10;
-  border-color: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 10px 26px rgba($orange, 0.18);
+  color: #ffffff;
+  border-color: rgba($orange, 0.14);
+  box-shadow: 0 10px 24px rgba($orange, 0.18);
 
   &:hover {
     transform: translateY(-1px);
-    box-shadow: 0 14px 40px rgba($orange, 0.22);
+    box-shadow: 0 14px 38px rgba($orange, 0.22);
   }
 }
 

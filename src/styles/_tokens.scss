@@ -1,13 +1,15 @@
-$bg0: #0b0c10;
-$bg1: #0f1117;
-$surface: rgba(255, 255, 255, 0.045);
-$surface2: rgba(255, 255, 255, 0.07);
-$border: rgba(255, 255, 255, 0.10);
-$border2: rgba(255, 255, 255, 0.16);
+$bg0: #f7f8fc;
+$bg1: #ffffff;
+$ink: #0f172a; // slate-900-ish
 
-$text: rgba(255, 255, 255, 0.92);
-$muted: rgba(255, 255, 255, 0.66);
-$subtle: rgba(255, 255, 255, 0.50);
+$surface: rgba($ink, 0.03);
+$surface2: rgba($ink, 0.055);
+$border: rgba($ink, 0.11);
+$border2: rgba($ink, 0.18);
+
+$text: rgba($ink, 0.92);
+$muted: rgba($ink, 0.70);
+$subtle: rgba($ink, 0.55);
 
 $orange: #e8622a;
 $purple: #7c3aed;
@@ -18,8 +20,8 @@ $yellow: #f59e0b;
 $gradBrand: linear-gradient(120deg, rgba($orange, 0.95) 0%, rgba($purpleMid, 0.85) 45%, rgba($purple, 0.75) 100%);
 $gradBrandSoft: linear-gradient(120deg, rgba($orange, 0.18) 0%, rgba($purpleMid, 0.12) 50%, rgba($purple, 0.10) 100%);
 
-$shadowSm: 0 8px 30px rgba(0, 0, 0, 0.28);
-$shadowMd: 0 16px 60px rgba(0, 0, 0, 0.40);
+$shadowSm: 0 10px 30px rgba($ink, 0.10);
+$shadowMd: 0 22px 70px rgba($ink, 0.16);
 
 $ffHead: "Syne", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 $ffBody: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;

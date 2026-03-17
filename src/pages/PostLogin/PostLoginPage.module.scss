@@ -6,8 +6,8 @@
 
 .card {
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.78);
   box-shadow: $shadowSm;
   padding: 18px 18px;
 }
@@ -63,7 +63,7 @@
 .primary {
   @extend .btnBase;
   background: $gradBrand;
-  color: #0b0c10;
+  color: #ffffff;
   box-shadow: 0 16px 52px rgba($orange, 0.16);
   &:hover {
     transform: translateY(-1px);
@@ -73,21 +73,21 @@
 
 .secondary {
   @extend .btnBase;
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: $surface;
+  border-color: $border;
   color: $text;
   &:hover {
     transform: translateY(-1px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.18);
+    background: $surface2;
+    border-color: $border2;
   }
 }
 
 .note {
   margin-top: 18px;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.82);
   padding: 14px 14px;
 }
 

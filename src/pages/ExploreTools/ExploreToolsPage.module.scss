@@ -6,8 +6,8 @@
 
 .head {
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.78);
   padding: 18px 18px;
   box-shadow: $shadowSm;
 }
@@ -40,8 +40,8 @@
 .toolCard,
 .toolCardDim {
   border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid $border;
+  background: rgba($bg1, 0.78);
   box-shadow: $shadowSm;
   padding: 16px 16px;
 }
@@ -66,14 +66,14 @@
   justify-content: center;
   font-family: $ffHead;
   font-weight: 800;
-  color: #0b0c10;
+  color: #ffffff;
   background: $gradBrand;
   box-shadow: 0 16px 48px rgba($orange, 0.16);
   flex-shrink: 0;
 }
 
 .toolIconDim {
-  background: rgba(255, 255, 255, 0.06);
+  background: $surface2;
   color: $text;
   box-shadow: none;
 }
@@ -102,8 +102,8 @@
   text-transform: uppercase;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.20);
+  border: 1px solid $border;
+  background: $surface;
   color: $muted;
 }
 
@@ -124,8 +124,8 @@
   height: 38px;
   padding: 0 14px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: $surface;
+  border: 1px solid $border;
   color: $text;
   font-size: 13px;
   font-weight: 650;
@@ -133,8 +133,8 @@
 
   &:hover {
     transform: translateY(-1px);
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.18);
+    background: $surface2;
+    border-color: $border2;
   }
 }
 

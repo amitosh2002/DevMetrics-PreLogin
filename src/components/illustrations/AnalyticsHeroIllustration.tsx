@@ -10,13 +10,13 @@ export function AnalyticsHeroIllustration() {
           <stop offset="1" stopColor="#7c3aed" stopOpacity="0.55" />
         </linearGradient>
         <linearGradient id="dmCard" x1="170" y1="130" x2="540" y2="340" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="rgba(255,255,255,0.08)" />
-          <stop offset="1" stopColor="rgba(255,255,255,0.02)" />
+          <stop offset="0" stopColor="rgba(255,255,255,0.92)" />
+          <stop offset="1" stopColor="rgba(255,255,255,0.72)" />
         </linearGradient>
       </defs>
 
       <g className={styles.float}>
-        <rect x="80" y="70" width="480" height="300" rx="22" fill="url(#dmCard)" stroke="rgba(255,255,255,0.12)" />
+        <rect x="80" y="70" width="480" height="300" rx="22" fill="url(#dmCard)" stroke="rgba(15,23,42,0.12)" />
 
         <path
           d="M130 290 C 185 230, 235 255, 295 210 C 345 172, 395 190, 455 145 C 505 107, 530 120, 510 165"
@@ -34,20 +34,20 @@ export function AnalyticsHeroIllustration() {
         </g>
 
         <g className={styles.pings}>
-          <circle cx="455" cy="145" r="8" fill="rgba(255,255,255,0.92)" />
+          <circle cx="455" cy="145" r="8" fill="rgba(15,23,42,0.92)" />
           <circle cx="455" cy="145" r="18" stroke="rgba(232,98,42,0.35)" strokeWidth="2" className={styles.ping} />
-          <circle cx="295" cy="210" r="7" fill="rgba(255,255,255,0.92)" />
+          <circle cx="295" cy="210" r="7" fill="rgba(15,23,42,0.92)" />
           <circle cx="295" cy="210" r="16" stroke="rgba(167,139,250,0.30)" strokeWidth="2" className={styles.ping2} />
         </g>
 
         <g className={styles.labels}>
-          <rect x="120" y="110" width="150" height="44" rx="14" fill="rgba(0,0,0,0.28)" stroke="rgba(255,255,255,0.10)" />
-          <text x="138" y="137" fill="rgba(255,255,255,0.85)" fontSize="12" fontFamily="ui-monospace, Menlo, Monaco, Consolas">
+          <rect x="120" y="110" width="150" height="44" rx="14" fill="rgba(255,255,255,0.86)" stroke="rgba(15,23,42,0.12)" />
+          <text x="138" y="137" fill="rgba(15,23,42,0.82)" fontSize="12" fontFamily="ui-monospace, Menlo, Monaco, Consolas">
             cycle_time ↓
           </text>
 
-          <rect x="360" y="300" width="170" height="44" rx="14" fill="rgba(0,0,0,0.28)" stroke="rgba(255,255,255,0.10)" />
-          <text x="378" y="327" fill="rgba(255,255,255,0.85)" fontSize="12" fontFamily="ui-monospace, Menlo, Monaco, Consolas">
+          <rect x="360" y="300" width="170" height="44" rx="14" fill="rgba(255,255,255,0.86)" stroke="rgba(15,23,42,0.12)" />
+          <text x="378" y="327" fill="rgba(15,23,42,0.82)" fontSize="12" fontFamily="ui-monospace, Menlo, Monaco, Consolas">
             review_load ↑
           </text>
         </g>
