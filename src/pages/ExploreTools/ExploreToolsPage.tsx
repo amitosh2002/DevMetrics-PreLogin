@@ -1,4 +1,5 @@
 import styles from './ExploreToolsPage.module.scss'
+import horaLogo from '../../assets/Hora-logo.svg'
 
 export function ExploreToolsPage() {
   return (
@@ -17,21 +18,23 @@ export function ExploreToolsPage() {
           <div className={styles.toolCard}>
             <div className={styles.toolTop}>
               <div className={styles.toolIcon} aria-hidden="true">
-                H
+                <img src={horaLogo} alt="" className={styles.toolLogo} />
               </div>
               <div className={styles.toolMeta}>
                 <div className={styles.toolName}>Hora</div>
-                <div className={styles.toolTag}>Time tracking • Focus</div>
+                <div className={styles.toolTag}>Hora – AI-Powered Developer Workflow Platform</div>
               </div>
               <div className={styles.soon}>Featured</div>
             </div>
             <p className={styles.toolDesc}>
-              A lightweight way to understand where time goes—great alongside DevMetrics for pairing delivery metrics with
-              focused work blocks.
+              Hora is an AI-driven engineering productivity platform designed to help development teams manage projects,
+              track progress, and gain real-time insights into their workflows. It integrates directly with tools like
+              GitHub and uses intelligent analytics to transform raw development activity into meaningful metrics and
+              actionable insights.
             </p>
             <div className={styles.toolFooter}>
-              <a className={styles.ghostBtn} href="#" onClick={(e) => e.preventDefault()}>
-                Learn more (link later)
+              <a className={styles.ghostBtn} href="https://app-hora.netlify.app/" target="_blank" rel="noreferrer">
+                Open Hora
               </a>
             </div>
           </div>
