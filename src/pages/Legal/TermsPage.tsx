@@ -32,7 +32,7 @@ export function TermsPage() {
           <h2>3. Integrations &amp; Permissions</h2>
           <p>
             When you connect DevMetrics to GitHub, we use the GitHub App <strong>DevMetrics-Analytics</strong> and request
-            read permissions only.
+            permissions necessary for analytics and AI code reviews (including writing PR comments and auto-merging safe PRs).
           </p>
           <p>You remain responsible for confirming and managing any permissions granted through third-party platforms.</p>
         </div>

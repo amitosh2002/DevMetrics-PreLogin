@@ -35,7 +35,7 @@ export function PrivacyPolicyPage() {
           <p>Authentication may occur through OAuth providers such as Google, GitHub, or GitLab.</p>
 
           <h3>Integration Data</h3>
-          <p>When you connect DevMetrics to platforms such as GitHub or GitLab, we may access read-only data including:</p>
+          <p>When you connect DevMetrics to platforms such as GitHub or GitLab, we may access data including:</p>
           <ul>
             <li>Repository metadata</li>
             <li>Commit activity</li>
@@ -44,7 +44,7 @@ export function PrivacyPolicyPage() {
             <li>Issue activity</li>
             <li>Project statistics</li>
           </ul>
-          <p>DevMetrics does not modify repositories or code.</p>
+          <p>DevMetrics only modifies repositories to post code review comments and auto-merge safe PRs (if configured).</p>
         </div>
 
         <div className={styles.card}>
@@ -53,14 +53,13 @@ export function PrivacyPolicyPage() {
             DevMetrics may use official platform integrations such as a GitHub App or GitLab App. For GitHub, the app name
             used for connecting is <strong>DevMetrics-Analytics</strong>.
           </p>
-          <p>These integrations currently request read-only permissions, which means DevMetrics cannot:</p>
+          <p>These integrations request permissions necessary for analytics and code review, which means DevMetrics cannot:</p>
           <ul>
-            <li>Modify repositories</li>
-            <li>Push code</li>
             <li>Delete repositories</li>
             <li>Change project settings</li>
+            <li>Modify code outside of auto-merging approved PRs</li>
           </ul>
-          <p>DevMetrics can only read data required to generate analytics and reports.</p>
+          <p>DevMetrics only reads data required for analytics and writes data required for AI code reviews.</p>
         </div>
 
         <div className={styles.card}>

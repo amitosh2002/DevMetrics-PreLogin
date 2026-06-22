@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { AnalyticsHeroIllustration } from '../../components/illustrations/AnalyticsHeroIllustration'
 import styles from './LandingPage.module.scss'
+import horaLogo from '../../assets/Hora-logo.svg'
 
 const services = [
   {
@@ -15,15 +16,19 @@ const services = [
     title: 'Automated reporting',
     desc: 'Share weekly and monthly summaries with your stakeholders (dashboards now; more channels soon).',
   },
+  {
+    title: 'AI Code Review',
+    desc: 'Automate security checks and code quality reviews with our instant AI-driven code analysis for every Pull Request.',
+  },
 ]
 
 const features = [
-  { k: 'Read-only access', v: 'We use read permissions to analyze activity—no write actions.' },
   { k: 'GitHub first', v: 'Connect using the GitHub App name: DevMetrics-Analytics.' },
   { k: 'GitLab coming soon', v: 'We’re building parity for GitLab with the same privacy-first approach.' },
   { k: 'Teams & orgs', v: 'Designed for multi-repo, multi-team rollups and comparisons.' },
   { k: 'PR & issue insights', v: 'Understand review queues, merge cadence, and collaboration patterns.' },
   { k: 'Health signals', v: 'Visibility into bus factor, ownership drift, and contributor distribution.' },
+  { k: 'AI security reviews', v: 'Automatic PR analysis for vulnerabilities with configurable auto-merge for safe changes.' },
 ]
 
 export function LandingPage() {
@@ -34,14 +39,14 @@ export function LandingPage() {
           <div className={styles.heroLeft}>
             <div className="dm-pill">
               <span className={styles.pulseDot} aria-hidden="true" />
-              GitHub read-only analytics • GitLab coming soon
+              GitHub integration • GitLab coming soon
             </div>
 
             <h1 className={styles.h1}>
-              Dev metrics that teams actually <span className="dm-grad-text">use</span>.
+              Dev metrics & AI reviews that teams actually <span className="dm-grad-text">use</span>.
             </h1>
             <p className={styles.lede}>
-              DevMetrics turns GitHub activity into clear engineering insights—so leaders can ship faster, and teams can
+              DevMetrics turns GitHub activity into clear engineering insights and automates security with AI code reviews—so leaders can ship faster, and teams can
               stay healthy.
             </p>
 
@@ -54,14 +59,17 @@ export function LandingPage() {
               </Link>
             </div>
 
+            <div style={{ marginTop: '24px', fontSize: '14px', color: 'var(--text-muted)', display: 'flex', alignItems: 'center' }}>
+              <span>Powered by</span>
+              <img src={horaLogo} alt="Hora" style={{ height: '40px' }} />
+              <span style={{ fontWeight: 'bold' }}>Hora</span>
+
+            </div>
+
             <div className={styles.heroMeta}>
               <div className={styles.metaCard}>
                 <div className={styles.metaLabel}>GitHub App</div>
                 <div className={styles.metaValue}>DevMetrics-Analytics</div>
-              </div>
-              <div className={styles.metaCard}>
-                <div className={styles.metaLabel}>Permissions</div>
-                <div className={styles.metaValue}>Read-only</div>
               </div>
               <div className={styles.metaCard}>
                 <div className={styles.metaLabel}>GitLab</div>
@@ -119,8 +127,8 @@ export function LandingPage() {
             <div className={styles.connectLeft}>
               <h2 className={styles.h2}>Connect GitHub in minutes</h2>
               <p className={styles.sectionSub}>
-                For now we integrate with GitHub via the GitHub App <span className="dm-grad-text">DevMetrics-Analytics</span>{' '}
-                using read permissions only. GitLab will be added soon.
+                For now we integrate with GitHub via the GitHub App <span className="dm-grad-text">DevMetrics-Analytics</span>.
+                GitLab will be added soon.
               </p>
 
               <div className={styles.connectBullets}>
@@ -130,7 +138,7 @@ export function LandingPage() {
                 </div>
                 <div className={styles.bullet}>
                   <span className={styles.bulletDot} />
-                  We do not modify repositories or push code
+                  We only modify your repositories to post code reviews and auto-merge safe PRs (if enabled)
                 </div>
                 <div className={styles.bullet}>
                   <span className={styles.bulletDot} />
@@ -139,9 +147,9 @@ export function LandingPage() {
               </div>
 
               <div className={styles.connectCtas}>
-                <Link to="/post-login" className={styles.primaryBtn}>
+                <a href="https://app-devmetrics-hora.netlify.app/" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
                   Continue (post-login)
-                </Link>
+                </a>
                 <Link to="/privacy" className={styles.secondaryBtn}>
                   Read privacy policy
                 </Link>
@@ -153,7 +161,7 @@ export function LandingPage() {
                 <div className={styles.miniTitle}>Data sources</div>
                 <div className={styles.miniRow}>
                   <span className={styles.badgeGood}>GitHub</span>
-                  <span className={styles.miniText}>Enabled (read-only)</span>
+                  <span className={styles.miniText}>Enabled</span>
                 </div>
                 <div className={styles.miniRow}>
                   <span className={styles.badgeSoon}>GitLab</span>

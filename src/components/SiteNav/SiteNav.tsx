@@ -26,9 +26,9 @@ export function SiteNav() {
         </nav>
 
         <div className={styles.ctaRow}>
-          <Link className={styles.ghostBtn} to="/post-login">
+          <a className={styles.ghostBtn} href="https://app-devmetrics-hora.netlify.app/" target="_blank" rel="noopener noreferrer">
             Post-login
-          </Link>
+          </a>
           <a className={styles.primaryBtn} href="#connect">
             Connect GitHub
           </a>
