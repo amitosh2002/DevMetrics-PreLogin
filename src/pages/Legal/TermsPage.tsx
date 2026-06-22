@@ -6,7 +6,7 @@ export function TermsPage() {
       <div className="dm-container">
         <div className={styles.head}>
           <h1 className={styles.title}>Terms of Service</h1>
-          <div className={styles.meta}>Last Updated: March 2026</div>
+          <div className={styles.meta}>Last Updated: June 2026</div>
           <p className={styles.lead}>
             These Terms govern your access to and use of DevMetrics. By using DevMetrics, you agree to these Terms.
           </p>
